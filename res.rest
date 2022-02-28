@@ -1,0 +1,10 @@
+PUT  http://localhost:8000/workers/621cce4920d4f02f792accc6
+content-type: application/json
+
+{
+  "firstName":"test",
+  "lastName":"test",
+    "email":"dd@gmail"
+
+}
+
