@@ -5,8 +5,10 @@
   "main": "./server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon node server.js",
-    "start": "node install && npm run start"
+    "setup": "npm install && cd client && npm install",
+    "start": "node server /server.js",
+    "client": "cd client && npm run start",
+    "dev": "concurrently --kill-other-on-fail \"npm run sever \"npm run client"
   },
   "author": "",
   "license": "ISC",

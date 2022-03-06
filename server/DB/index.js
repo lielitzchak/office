@@ -4,7 +4,7 @@ mongoose
     UseNewUrlParser: true,
     useunifiedtopology: true,
   })
-  .then(() => console.log("connected"))
+  .then(() => console.log("connected in port 8000"))
   .catch((er) => console.log(er));
 module.exports = mongoose.connection;
  
